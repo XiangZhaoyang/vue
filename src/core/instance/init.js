@@ -35,12 +35,14 @@ export function initMixin (Vue: Class<Component>) {
       // internal component options needs special treatment.
       initInternalComponent(vm, options)
     } else {
+      // 合并配置参数
       vm.$options = mergeOptions(
         resolveConstructorOptions(vm.constructor),
         options || {},
         vm
       )
     }
+    // 设置代理
     /* istanbul ignore else */
     if (process.env.NODE_ENV !== 'production') {
       initProxy(vm)
@@ -148,3 +150,4 @@ function dedupe (latest, extended, sealed) {
     return latest
   }
 }
+console.log(5)

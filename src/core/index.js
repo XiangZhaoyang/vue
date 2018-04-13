@@ -18,3 +18,4 @@ Object.defineProperty(Vue.prototype, '$ssrContext', {
 Vue.version = '__VERSION__'
 
 export default Vue
+console.log(3)

@@ -120,6 +120,7 @@ function initData (vm: Component) {
       vm
     )
   }
+  console.log(JSON.stringify(data))
   // proxy data on instance
   const keys = Object.keys(data)
   const props = vm.$options.props

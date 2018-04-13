@@ -98,3 +98,5 @@ function getOuterHTML (el: Element): string {
 Vue.compile = compileToFunctions
 
 export default Vue
+
+console.log(1)

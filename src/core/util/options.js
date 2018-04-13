@@ -65,6 +65,7 @@ function mergeData (to: Object, from: ?Object): Object {
 /**
  * Data
  */
+// TODO:
 export function mergeDataOrFn (
   parentVal: any,
   childVal: any,
@@ -246,12 +247,14 @@ const defaultStrat = function (parentVal: any, childVal: any): any {
 /**
  * Validate component names
  */
+// 验证配置参数组件名字
 function checkComponents (options: Object) {
   for (const key in options.components) {
     validateComponentName(key)
   }
 }
 
+// 验证组件名字
 export function validateComponentName (name: string) {
   if (!/^[a-zA-Z][\w-]*$/.test(name)) {
     warn(

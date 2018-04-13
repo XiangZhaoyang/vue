@@ -73,3 +73,4 @@ Vue.nextTick(() => {
 }, 0)
 
 export default Vue
+console.log(2)
